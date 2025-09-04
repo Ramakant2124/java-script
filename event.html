@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        .para{
+            border: 1px solid;
+            padding: 10px;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+  <button onclick="handleClick()">click me</button>
+  <button ondblclick="handleDoubleClick()" >dbl click</button>
+
+  <p id="para" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Quaerat accusantium atque dolores necessitatibus perspiciatis voluptates odit asperiores, 
+      officiis deleniti rem consequatur ea vero, quis, consequuntur nulla ducimus neque beatae ad?</p>
+
+   <button onclick="changeStyle()">click</button>
+
+
+
+
+    <script>
+//handler function (handles an events)
+
+function handleClick(){
+    console.log("clicked..!")
+}
+
+function handleDoubleClick(){
+    alert('hello..1')
+}
+
+function changeStyle(){
+    para.style.color = "blue"
+    para.style.fontSize= "22px"
+    para.style.fontFamily = "cursive"
+
+
+}
+
+
+</script>
+
+</body>
+</html>
+

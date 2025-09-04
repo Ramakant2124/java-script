@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h3>Document Object Model (Dom) </h3>
+
+   <div>
+    <h3 id="head1">INDIA</h3>
+    <p id ="para1">
+        A paragraph is a group of related sentences focused on a single main idea, serving as a self-contained unit of writing to organize and structure text, making it easier for the reader to follow the author's thoughts. Paragraphs are conventionally marked by an indentation at the start of the first sentence or by beginning on a new line, and they typically contain a topic sentence
+    </p>
+   </div>
+
+ <div>
+    <h3 class="heade">Maharastra</h3>
+    <p class ="parae">
+        A paragraph is a group of related sentences focused on a single main idea, serving as a self-contained unit of writing to organize and structure text, making it easier for the reader to follow the author's thoughts. Paragraphs are conventionally marked by an indentation at the start of the first sentence or by beginning on a new line, and they typically contain a topic sentence
+    </p>
+   </div>
+
+   <script>
+    //console.log(document)
+   //id
+   const head1=document.getElementById('head1') 
+   console.log(head1)
+
+   const para1=document.getElementById('para1') 
+   console.log(para1) 
+    
+   //class
+   const heade=document.getElementsByClassName('heade') 
+   console.log(heade)
+
+   const parae = document.getElementsByClassName('parae');
+   console.log(parae)
+
+   const hedings = document.getElementsByTagName('h3');
+   console.log(hedings)
+
+
+</script>
+     
+</body>
+</html>
+
